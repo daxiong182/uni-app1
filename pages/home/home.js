@@ -1,18 +1,50 @@
-// pages/list/list.js
+// pages/home/home.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    // 存放轮播图数据的数组
+    swiperList:[],
+    gridList:[]
 
+  },
+
+
+
+  //发起GET数据请求获取轮播图数据
+  getInfo(){ 
+    wx.request({
+      url: 'https://www.escook.cn/slides',
+      method:'GET',
+      success:(res)=>{
+       const data= res.data
+       this.setData({swiperList:data})
+      }
+    })
+  },
+
+  //获取九宫格数据的方法
+  getGridList(){
+    wx.request({
+      url: 'https://www.escook.cn/categories',
+      method:'GET',
+      success:(res)=>{
+        const data=res.data;
+        this.setData({
+          gridList:data
+        })
+      }
+    })
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+      this.getInfo()
+      this.getGridList()
   },
 
   /**
