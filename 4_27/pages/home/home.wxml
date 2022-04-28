@@ -1,0 +1,7 @@
+<!--pages/home/home.wxml-->
+<view style='font-size: 25px;'>父组件中的count:{{count}}</view>
+<my-test3 count='{{count}}' bind:changeFather="fatherUpdate" class='my-test3'>
+<view slot='before'>haha</view>
+</my-test3>
+
+<button bindtap="getChild">获取子组件的实例对象</button>

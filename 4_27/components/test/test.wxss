@@ -1,0 +1,5 @@
+/* components/test/test.wxss */
+button{
+    margin: 5px;
+}
+

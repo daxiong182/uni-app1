@@ -1,0 +1,11 @@
+{
+    "usingComponents": {
+        "my-test1":"../../components/test/test"
+    },
+    "enablePullDownRefresh": true,
+    "navigationBarBackgroundColor":"#fff",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "消息页面",
+    "backgroundColor": "#fefefe",
+    "backgroundTextStyle": "dark"
+}

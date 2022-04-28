@@ -1,0 +1,22 @@
+<!--pages/message/message.wxml-->
+<!-- <view>{{m1.toUpper(username)}}</view>
+<view>{{m2.toLower(country)}}</view>
+
+<view>{{numA}}+{{numB}}={{sum}}</view>
+<van-button type="primary"  bindtap="btnHandler1" data-step='{{1}}'>主要按钮</van-button>
+<van-button type="primary" bindtap="btnHandler1" data-step="{{-1}}">主要按钮</van-button>
+
+<van-button type="primary" bindtap="getInfo">请求事件</van-button>
+
+
+<wxs module='m1'>
+
+    module.exports.toUpper=function(str){
+       return str.toUpperCase()
+    }
+
+</wxs>
+
+<wxs src='../../utils/tools.wxs' module='m2'></wxs> -->
+<my-test4></my-test4>
+
