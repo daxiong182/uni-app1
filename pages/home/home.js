@@ -39,12 +39,42 @@ Page({
     })
   },
 
+  //页面上拉触底事件
+  onReachBottom:function(){
+    console.log('触发了上拉触底');
+  },
+  
+  //页面下拉触发事件
+  onPullDownRefresh:function(){
+    console.log('1111');
+    
+  },
+
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
       this.getInfo()
       this.getGridList()
+  },
+
+  //通过编程式导航跳转到tabBar
+  gotoMessage(){
+    wx.switchTab({
+      url: '/pages/message/message',
+    })
+  },
+  //通过编程式导航跳转到非tabBar页面
+  gotoInfo(){
+    wx.navigateTo({
+      url: '/pages/info/info',
+    })
+  },
+
+  gotoInfo2(){
+    wx.navigateTo({
+      url: '/pages/info/info?name=ls&gender=男',
+    })
   },
 
   /**

@@ -5,7 +5,7 @@
   "navigationBarTitleText": "消息页面",
   "backgroundColor": "#fefefe",
   "backgroundTextStyle": "dark",
-  "enablePullDownRefresh": false
+  "enablePullDownRefresh": true
 }
 
 

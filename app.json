@@ -1,8 +1,12 @@
 {
   "pages": [
+
     "pages/home/home",
+    "pages/shoplist/shoplist",
     "pages/message/message" ,
-    "pages/contact/contact"
+    "pages/contact/contact",
+    "pages/info/info"
+    
   ],
   "window": {
     "backgroundTextStyle": "dark",

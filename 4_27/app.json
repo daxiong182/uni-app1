@@ -1,0 +1,73 @@
+{
+  "pages":[
+    "pages/home/home",
+    "pages/message/message",
+    "pages/contact/contact",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "preloadRule": {
+    "pages/contact/contact":{
+        "packages": ["p1"],
+        "network": "all"
+    }  
+  },
+  "subpackages": [
+    {
+        "root":"pkgA",
+        "name":"p1",
+        "pages": [
+         "pages/cat/cat",
+         "pages/dog/dog"   
+        ]
+    },
+    {
+        "root":"pkgB",
+        "name":"p2",
+        "pages": [
+         "pages/apple/apple"  
+        ],
+        "independent": true
+    }  
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+      "custom": true,
+      "list": [
+        {
+            "pagePath": "pages/home/home",
+            "text": "首页",
+            "iconPath": "/images/home.png",
+            "selectedIconPath":"/images/home-active.png"
+          },
+          {
+            "pagePath": "pages/message/message",
+            "text": "消息",
+            "iconPath": "/images/message.png",
+            "selectedIconPath":"/images/message-active.png"
+          },
+          {
+            "pagePath": "pages/contact/contact",
+            "text": "联系我们",
+            "iconPath": "/images/contact.png",
+            "selectedIconPath":"/images/contact-active.png"
+          }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+     "my-test1":"./components/test/test" ,
+     "my-test3":"./components/test3/test3",
+     "my-test4":"./components/test4/test4",
+     "van-button": "@vant/weapp/button/index"     
+  }
+     
+
+}
+
+

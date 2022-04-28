@@ -1,0 +1,15 @@
+/* pages/contact/contact.wxss */
+
+.num-item{
+    border: 1px;
+    height: 120rpx;
+    border: 1px solid #efefef;
+    color:#fff;
+    margin:15rpx;
+    text-align: center;
+    line-height: 120rpx;
+    text-shadow: 0 0 5rpx #fff;
+    box-shadow:1rpx 1rpx 6rpx #aaa;
+}
+
+
